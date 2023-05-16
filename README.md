@@ -1,4 +1,4 @@
-## Short and handpick Go crates list.
+## Short and handpick Go packages list.
 
 ### Date and Time
 
