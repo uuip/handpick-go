@@ -6,7 +6,10 @@
 
 ### Serialization
 
-* github.com/tidwall/gjson
+* github.com/tidwall/gjson - simple than encoding/json
+    ```go
+    gjson.GetBytes(resp.Body(), "PCP.0.version")
+    ```
 * gopkg.in/yaml.v3
 
 ### File Processing
@@ -17,6 +20,11 @@
 
 * github.com/go-resty/resty/v2
 * github.com/PuerkitoBio/goquery
+  ```go
+  doc, err := goquery.NewDocumentFromReader(bytes.NewReader(resp.Body()))
+  ...
+  doc.Find("b").FilterFunction(...).First().Text()
+  ```
 
 ### Web Framework
 
